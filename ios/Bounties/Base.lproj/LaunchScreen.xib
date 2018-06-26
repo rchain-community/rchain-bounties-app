@@ -15,9 +15,6 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grid" translatesAutoresizingMaskIntoConstraints="NO" id="1pD-PH-CIQ">
-                    <rect key="frame" x="0.0" y="200" width="280" height="280"/>
-                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bee" translatesAutoresizingMaskIntoConstraints="NO" id="IKX-jQ-5zo">
                     <rect key="frame" x="192" y="192" width="96" height="96"/>
                     <constraints>
@@ -26,14 +23,10 @@
                     </constraints>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" red="0.1764705882352941" green="0.10588235294117647" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.80000000000000004" green="0.11764705882352941" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="IKX-jQ-5zo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2IX-X1-813"/>
-                <constraint firstAttribute="bottom" secondItem="1pD-PH-CIQ" secondAttribute="bottom" id="7Gp-Ha-sGj"/>
                 <constraint firstItem="IKX-jQ-5zo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Jkz-GV-Kzv"/>
-                <constraint firstItem="1pD-PH-CIQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XmQ-MY-UeC"/>
-                <constraint firstItem="1pD-PH-CIQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="200" id="cAv-El-a8I"/>
-                <constraint firstAttribute="trailing" secondItem="1pD-PH-CIQ" secondAttribute="trailing" constant="200" id="k4w-VD-0M8"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -41,7 +34,6 @@
         </view>
     </objects>
     <resources>
-        <image name="Bee" width="224" height="217"/>
-        <image name="Grid" width="900" height="1140"/>
+        <image name="Bee" width="445" height="444"/>
     </resources>
 </document>

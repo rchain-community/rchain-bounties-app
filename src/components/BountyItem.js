@@ -21,10 +21,10 @@ export default class BountyItem extends React.Component {
 
   async calculateRead (props) {
     const {data} = props
-    const {id} = data
+    const {number} = data
     const {unread} = this.state
 
-    let isSeen = await AsyncStorage.getItem('seen.' + id)
+    let isSeen = await AsyncStorage.getItem('seen.' + number)
 
     if (unread && isSeen) {
       this.setState({unread: false})
