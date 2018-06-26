@@ -112,7 +112,7 @@ export default class BountyDetailsScreen extends React.Component {
             </View>
             <View style={styles.infoParagraph}>
               <Text style={styles.infoTitle}>Bounty issuer</Text>
-              <TouchableOpacity style={styles.userInfoContainer} onPress={() => this.openURL(bounty.user.url)}>
+              <TouchableOpacity style={styles.userInfoContainer} onPress={() => this.openURL(bounty.user.html_url)}>
                 <Image style={styles.cryptoImage} source={{ uri: bounty.user.avatar_url }} />
                 <View style={styles.cryptoAmount}>
                   <Text style={styles.cryptoText}>{bounty.user.login}</Text>
