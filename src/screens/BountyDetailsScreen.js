@@ -46,13 +46,8 @@ export default class BountyDetailsScreen extends React.Component {
     })
   }
 
-  openURL (type) {
-    if (type === 'web') {
-      Linking.openURL(this.state.bounty.webReferenceURL)
-      return
-    }
-
-    Linking.openURL('https://beta.bounties.network/user/' + this.state.bounty.issuer)
+  openURL (url) {
+    Linking.openURL(url)
   }
 
   _onRefresh () {
@@ -117,15 +112,22 @@ export default class BountyDetailsScreen extends React.Component {
             </View>
             <View style={styles.infoParagraph}>
               <Text style={styles.infoTitle}>Bounty issuer</Text>
-              <TouchableOpacity onPress={() => this.openURL('address')}>
-                <Text style={[styles.infoDescription, styles.link]}>{bounty.issuer}</Text>
+              <TouchableOpacity style={styles.userInfoContainer} onPress={() => this.openURL(bounty.user.url)}>
+                <Image style={styles.cryptoImage} source={{ uri: bounty.user.avatar_url }} />
+                <View style={styles.cryptoAmount}>
+                  <Text style={styles.cryptoText}>{bounty.user.login}</Text>
+                  <Text style={styles.cryptoSubtext}>{bounty.author_association}</Text>
+                </View>
               </TouchableOpacity>
             </View>
             <View style={styles.infoParagraph}>
-              <Text style={styles.infoTitle}>URL</Text>
+              <Text style={styles.infoTitle}>Votes</Text>
             </View>
             <View style={styles.infoParagraph}>
-              <Text style={styles.infoTitle}>Deadline</Text>
+              <Text style={styles.infoTitle}>Open in Github</Text>
+              <TouchableOpacity onPress={() => this.openURL(bounty.html_url)}>
+                <Text style={[styles.infoDescription, styles.link]}>{bounty.html_url}</Text>
+              </TouchableOpacity>
             </View>
           </View>
         </ScrollView>
@@ -269,14 +271,24 @@ const styles = StyleSheet.create({
     width: Dimensions.get('window').width,
     backgroundColor: '#fff',
     bottom: -100
-  }
+  },
+  issuerAvatar: {
+    height: 50,
+    width: 50,
+    borderRadius: 25,
+  },
+  userInfoContainer: {
+    paddingTop: 10,
+    paddingBottom: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
 })
 
 const standards = {
   color: '#81848A',
   fontSize: 16,
   fontWeight: '300',
-  lineHeight: 24
 }
 
 const markdown = StyleSheet.create({
@@ -304,7 +316,7 @@ const markdown = StyleSheet.create({
   },
   text: {
     ...standards,
-    lineHeight: 2,
+    lineHeight: 30,
     color: '#666A73',
   }
 })
