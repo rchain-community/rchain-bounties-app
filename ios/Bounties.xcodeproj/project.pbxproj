@@ -569,6 +569,7 @@
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 9WAKQUB788;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -971,6 +972,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 9WAKQUB788;
@@ -984,6 +987,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ahsanfazal.rchain-bounties";
 				PRODUCT_NAME = Bounties;
+				PROVISIONING_PROFILE = "54649d01-fc2b-4111-a6d7-568c44c57e3c";
+				PROVISIONING_PROFILE_SPECIFIER = rc;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -993,6 +998,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9WAKQUB788;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-navigation/ios/**";
@@ -1005,6 +1012,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ahsanfazal.rchain-bounties";
 				PRODUCT_NAME = Bounties;
+				PROVISIONING_PROFILE = "54649d01-fc2b-4111-a6d7-568c44c57e3c";
+				PROVISIONING_PROFILE_SPECIFIER = rc;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
