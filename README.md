@@ -23,7 +23,8 @@ Follow these steps to get started:
 
 ## Implementation details
 
-* React Native version 0.55.4 is used
+* Using React Native version 0.55.4
+* Using the [react-native-navigation](https://github.com/wix/react-native-navigation)
 
 ## Tips
 
