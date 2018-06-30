@@ -1,7 +1,7 @@
 # RChain bounties network mobile app
 
 ## Description
-A React Native cross-platform mobile app for exploring bounties. Uses the [RChain bounties API](https://github.com/th3build/rchain-bounties-api) and the [Github REST API v3](https://developer.github.com/v3/?) for data.
+A React Native cross-platform mobile app for exploring bounties. Uses the [RChain bounties API](https://github.com/th3build/rchain-bounties-api) and the [Github REST API v3](https://developer.github.com/v3/?) as data sources.
 
 ## Project status
 
