@@ -19,7 +19,7 @@ Follow these steps to get started:
 1. Clone the repo with `git clone https://github.com/th3build/rchain-bounties-app.git`
 2. Go to the root of the directory `cd rchain-bounties-app`
 3. Install the dependencies `yarn`
-4. Run the app with `react-native run-ios` or `react-native run-android`
+4. Run the app `react-native run-ios` or `react-native run-android`
 
 ## Implementation details
 
